@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自己写的移动端首页</title>
+    <!-- 1.css在head中引入
+    2.js在body结束标签上面引入
+    3.先引入第三方包(方便我们自己使用和覆盖)
+    4.再引入自己的包
+    
+    5.如果又雨来关系 先引入被依赖的包 在引入不被依赖的包 -->
+    <!-- 引入MUI的css文件 -->
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <!-- 引入字体图标fontawsome字体图标库的css文件 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入主页的less文件 注意stylesheet.less -->
+    <link rel="stylesheet/less" href="less/index.less">
+    <!-- 引入less文件的编译器 -->
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+    <div>移动端里写的代码</div>
+    <!-- 引入zepto的js 发送请求之类的 和获取元素 添加事件之类 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUI的js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎  artTemplate template-web.js最新4.0最新版本-->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己的jsb包 -->
+    <script src="js/index.js"></script>
+</body>
+</html>
