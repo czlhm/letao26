@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+body {
+  padding: 0.45rem 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+#main {
+  height: 100vh;
+  position: relative;
+}
+#header {
+  background-color: #006699;
+  display: flex;
+  /* 给父元素设置padding把内容往中间挤  2边如果有图标 使用定位 左边定位在左边 右边定位在右边 */
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  height: 0.45rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#header h4 {
+  width: 2.85rem;
+  text-align: center;
+  line-height: 0.45rem;
+  margin: 0;
+  font-weight: normal;
+}
+#header a {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  text-align: center;
+  color: white;
+}
+#footer {
+  width: 100vw;
+  height: 0.45rem;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 25vw;
+}
+#footer ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.085rem;
+}
+#footer ul li a span {
+  display: block;
+}
+#nav {
+  margin-top: 0.1rem;
+  padding: 0 10px;
+}
+#nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav > ul > li {
+  width: 33.33%;
+}
+#nav > ul > li > a > img {
+  width: 100%;
+}
+#banner {
+  display: flex;
+  padding: 0.1rem;
+}
+#banner .banner-left {
+  width: 2.3667rem;
+  height: 2.4rem;
+}
+#banner .banner-left a {
+  display: flex;
+  font-size: 0;
+}
+#banner .banner-left a img {
+  width: 50%;
+  height: 1.2rem;
+}
+#banner .banner-right {
+  width: 1.1833rem;
+  height: 2.4rem;
+}
+#banner .banner-right a {
+  display: block;
+}
+#banner .banner-right a img {
+  width: 100%;
+  height: 2.4rem;
+}
+#brand {
+  padding: 0.1rem;
+}
+#brand .title > a {
+  display: block;
+}
+#brand .title > a > img {
+  width: 100%;
+}
+#brand .content > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#brand .content > ul > li {
+  width: 25%;
+}
+#brand .content > ul > li > a > img {
+  width: 100%;
+}
+#sport,
+#women,
+#man {
+  padding: 0.1rem;
+}
+#sport .title > a > img,
+#women .title > a > img,
+#man .title > a > img {
+  width: 100%;
+}
+#sport .content ul,
+#women .content ul,
+#man .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#sport .content ul li,
+#women .content ul li,
+#man .content ul li {
+  width: 50%;
+}
+#sport .content ul li .product,
+#women .content ul li .product,
+#man .content ul li .product {
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px #ccc;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}
+#sport .content ul li .product .product-img,
+#women .content ul li .product .product-img,
+#man .content ul li .product .product-img {
+  width: 100%;
+}
+#sport .content ul li .product .product-name,
+#women .content ul li .product .product-name,
+#man .content ul li .product .product-name {
+  color: #a4a4a8;
+}
+#sport .content ul li .product .product-price span,
+#women .content ul li .product .product-price span,
+#man .content ul li .product .product-price span {
+  color: red;
+}
+#sport .content ul li .product .product-price span del,
+#women .content ul li .product .product-price span del,
+#man .content ul li .product .product-price span del {
+  color: #ccc;
+}

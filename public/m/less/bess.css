@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+body {
+  padding: 0.45rem 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+#main {
+  height: 100vh;
+  position: relative;
+}
+#header {
+  background-color: #006699;
+  display: flex;
+  /* 给父元素设置padding把内容往中间挤  2边如果有图标 使用定位 左边定位在左边 右边定位在右边 */
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+  height: 0.45rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#header h4 {
+  width: 2.85rem;
+  text-align: center;
+  line-height: 0.45rem;
+  margin: 0;
+  font-weight: normal;
+}
+#header a {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  text-align: center;
+  color: white;
+}
+#footer {
+  width: 100vw;
+  height: 0.45rem;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 25vw;
+}
+#footer ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.085rem;
+}
+#footer ul li a span {
+  display: block;
+}
