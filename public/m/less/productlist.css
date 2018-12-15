@@ -133,3 +133,25 @@ body {
 .product-list ul li .product .product-price span del {
   color: #ccc;
 }
+#main {
+  background-color: #fff;
+}
+#main .product-list .title {
+  background-color: #ccc;
+}
+#main .product-list .title ul {
+  display: flex;
+}
+#main .product-list .title ul li {
+  flex: 1;
+}
+#main .product-list .title ul li.active a {
+  color: red;
+}
+#main .product-list .title ul li a {
+  display: block;
+  color: #666;
+  font-size: .12rem;
+  text-align: center;
+  line-height: .3rem;
+}

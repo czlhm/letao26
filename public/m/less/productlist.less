@@ -1,0 +1,30 @@
+@import 'bess.less';
+
+// 商品列表的样式
+#main{
+    background-color: #fff;
+    .product-list{
+        .title{
+
+            background-color: #ccc;
+            ul{
+                display: flex;
+                li{
+                    flex: 1;
+                    &.active{
+                        a{
+                            color: red;
+                        }
+                    }
+                    a{
+                        display: block;
+                        color: #666;
+                        font-size: .12rem;
+                        text-align: center;
+                        line-height: .3rem;
+                    }
+                }
+            }
+        }
+    }
+}
