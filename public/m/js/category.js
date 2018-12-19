@@ -5,6 +5,12 @@ $(function () {
     });
 
     $.ajax({
+        beforeSend:function(){
+         $('.mask').show()
+        },
+        complete:function(){
+            $('.mask').hide();
+        },
         url: '/category/queryTopCategory',
         success: function (data) {
             var html = template('categoryLeftTpl', data);

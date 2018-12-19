@@ -1,0 +1,77 @@
+@import "bess.less";
+#main {
+  .mui-media {
+    .mui-pull-left {
+      &.mui-checkbox {
+        .mui-media-object {
+          height: 0.8rem;
+          line-height: 0.8rem;
+          max-width: 0.8rem;
+        }
+        input {
+          //取消定位
+          position: static;
+          display: block;
+          margin: 0 auto;
+          &::before {
+            color: #ccc;
+          }
+        }
+      }
+    }
+    .mui-media-body {
+      line-height: 0.3rem;
+      .product-name {
+        white-space: normal;
+        color: #666;
+        line-height: 0.2rem;
+      }
+      .product-price {
+        span {
+          color: red;
+          font-weight: 700;
+        }
+        del {
+          color: #ccc;
+        }
+      }
+      .product-params {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+}
+
+  // 订单区域的样式
+  #order {
+    position: fixed;
+    background-color: #fff;
+    bottom: 0.45rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    height: 0.3rem;
+    .order-total {
+      padding-left: 0.1rem;
+      line-height: 0.3rem;
+      font-weight: 700;
+      color: red;
+    }
+  }
+
+.mui-popup{
+    width: 3.2rem;
+}
+/* 确认框动态弹出来在页面最上面的不是谁的子元素 */
+.product-size {
+    line-height: 0.38rem;
+    .btn-size {
+        margin-top: 0.05rem;
+        &.active {
+            background-color: orange;
+        }
+    }
+}

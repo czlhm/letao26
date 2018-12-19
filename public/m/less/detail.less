@@ -1,0 +1,36 @@
+@import 'bess.less';
+// 主体样式
+#main{
+    font-size: .14rem;
+    .product-size{
+        line-height: 0.38rem;
+        .btn-size{
+            margin-top: 0.08rem;
+            &.active{
+                background-color: orange;
+            }
+        }
+    }
+}
+
+// 底部样式
+#footer{
+    background-color: #ccc;
+    ul{
+        li{
+            flex: 1;
+            padding: 0.05rem;
+            button{
+                width: 100%;
+            }
+        }
+        li:first-child{
+            width: 0.625rem;
+            flex: none;
+            a{
+                color: #666;
+                font-size: 0.2rem;
+            }
+        }
+    }
+}

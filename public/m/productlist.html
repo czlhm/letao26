@@ -33,7 +33,9 @@
     </header>
     <!-- 主体区域 -->
     <main id="main">
-        <!-- 搜索表单 -->
+      <div class="mui-scroll-wrapper" id="refreshContainer">
+          <div class="mui-scroll">
+                      <!-- 搜索表单 -->
         <form action="#" class="form-search">
             <input type="search" class="input-search" name="" placeholder="请输入要搜索的商品">
             <!-- 注意把按钮类型改成button不然会触发提交 默认submit -->
@@ -47,10 +49,10 @@
                         <a href="#">上架时间<i class="fa fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="#">价格<i class="fa fa-angle-down"></i></a>
+                        <a href="#" data-sort='1' data-type='price'>价格<i class="fa fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="#">销量<i class="fa fa-angle-down"></i></a>
+                        <a href="#" data-sort='1' data-type='num'>销量<i class="fa fa-angle-down"></i></a>
                     </li>
                     <li >
                         <a href="#">折扣<i class="fa fa-angle-down"></i></a>
@@ -138,6 +140,8 @@
                 </li>
             </ul>
         </div>
+          </div>
+      </div>
     </main>
     <!-- 底部区域 -->
     <footer id="footer">
@@ -148,6 +152,29 @@
             <li><a href="user.html" class="fa fa-user"><span>个人中心</span></a></li>
         </ul>
     </footer>
+        	 <!-- mask遮罩层 -->
+             <div class="mask">
+                    <div class="spinner">
+                        <div class="spinner-container container1">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                        <div class="spinner-container container2">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                        <div class="spinner-container container3">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                    </div>
+                </div>
     <!-- 创建商品列表的模板 -->
     <script id="productListTpl" type="text/html">
         {{ each data value }}
@@ -160,7 +187,7 @@
                         <del>${{ value.oldPrice }}</del>
                     </p>
                     <p class="product-buy">
-                        <button type="button" class="mui-btn mui-btn-primary">立即购买</button>
+                        <button type="button" class="mui-btn mui-btn-primary btn-buy" data-id='{{value.id}}'>立即购买</button>
                     </p>
                 </a>
             </li>

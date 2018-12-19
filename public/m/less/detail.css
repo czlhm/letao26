@@ -10,11 +10,11 @@ img {
 }
 body {
   padding: 0.45rem 0;
-  height: 100vh;
+  height: 100%;
   background-color: #ffffff;
 }
 #main {
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 #header {
@@ -133,57 +133,33 @@ body {
 .product-list ul li .product .product-price span del {
   color: #ccc;
 }
-body {
-  background-color: #ccc;
-}
 #main {
-  display: flex;
+  font-size: .14rem;
 }
-#main .category-left {
-  width: 0.8rem;
-  position: relative;
+#main .product-size {
+  line-height: 0.38rem;
 }
-#main .category-left ul {
-  min-height: 6.68rem;
+#main .product-size .btn-size {
+  margin-top: 0.08rem;
 }
-#main .category-left ul li.active a {
+#main .product-size .btn-size.active {
+  background-color: orange;
+}
+#footer {
   background-color: #ccc;
-  color: #006699;
 }
-#main .category-left ul li a {
-  display: block;
-  color: #666;
-  height: 0.45rem;
-  text-align: center;
-  line-height: 0.45rem;
-  font-size: 0.14rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-}
-#main .category-right {
+#footer ul li {
   flex: 1;
-  position: relative;
+  padding: 0.05rem;
 }
-#main .category-right ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.1rem;
-  min-height: 6.68rem;
-  /* 注意如果设置了最小高度 默认内容会使用 align-content:stretch 内容会占满整个高度
-			把内容对齐方式设置为flex-start顶部对齐 */
-  align-content: flex-start;
-}
-#main .category-right ul li {
-  width: 33.33%;
-}
-#main .category-right ul li a {
-  display: block;
-  background-color: #fff;
-}
-#main .category-right ul li a img {
+#footer ul li button {
   width: 100%;
 }
-#main .category-right ul li a p {
-  font-size: 0.14rem;
-  text-align: center;
+#footer ul li:first-child {
+  width: 0.625rem;
+  flex: none;
+}
+#footer ul li:first-child a {
+  color: #666;
+  font-size: 0.2rem;
 }
